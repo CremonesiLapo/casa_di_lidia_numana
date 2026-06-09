@@ -43,3 +43,7 @@ next-env.d.ts
 # agent instructions (local-only)
 AGENTS.md
 CLAUDE.md
+
+# documentation / dev config (not needed for the site)
+README.md
+eslint.config.mjs
