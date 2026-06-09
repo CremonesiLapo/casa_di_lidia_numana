@@ -90,7 +90,7 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="md:hidden bg-white/95 backdrop-blur-xl rounded-b-2xl px-4 pb-5 pt-1 flex flex-col gap-3 text-sm font-semibold tracking-widest text-mare">
+          <div className="md:hidden bg-white/80 backdrop-blur-xl shadow-lg rounded-b-2xl px-4 pb-5 pt-1 flex flex-col gap-3 text-sm font-semibold tracking-widest text-mare">
             {links.map((l) => (
               <a
                 key={l.href}
