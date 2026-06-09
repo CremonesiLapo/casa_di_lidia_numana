@@ -1,14 +1,15 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
+import { BASE } from "@/lib/constants";
 
 const items = [
-  { img: "/assets/icon_tazza.png", label: "COLAZIONE ALL'APERTO" },
-  { img: "/assets/icon_conero.png", label: "VERDE DEL CONERO" },
-  { img: "/assets/icon_family.png", label: "COME A CASA" },
-  { img: "/assets/icon_beach.png", label: "A POCHI PASSI DAL MARE" },
-  { img: "/assets/icon_beb.png", label: "CAMERE FRONTEMARE" },
-  { img: "/assets/icon_appartamento.png", label: "APPARTAMENTI LUNGOMARE" },
+  { img: `${BASE}/assets/icon_tazza.png`, label: "COLAZIONE ALL'APERTO" },
+  { img: `${BASE}/assets/icon_conero.png`, label: "VERDE DEL CONERO" },
+  { img: `${BASE}/assets/icon_family.png`, label: "COME A CASA" },
+  { img: `${BASE}/assets/icon_beach.png`, label: "A POCHI PASSI DAL MARE" },
+  { img: `${BASE}/assets/icon_beb.png`, label: "CAMERE FRONTEMARE" },
+  { img: `${BASE}/assets/icon_appartamento.png`, label: "APPARTAMENTI LUNGOMARE" },
 ];
 
 export default function Valori() {

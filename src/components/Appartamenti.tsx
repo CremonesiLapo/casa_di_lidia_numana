@@ -2,11 +2,12 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useInView } from "@/hooks/useInView";
+import { BASE } from "@/lib/constants";
 
 const apartmentImages = [
-  "/appartamento/camera-appartamento-via-risorgimento-600x538.jpg",
-  "/appartamento/cucina-appartamento-via-risorgimento-600x538.jpg",
-  "/appartamento/bagno-appartamento-via-risorgimento-600x538.jpg",
+  `${BASE}/appartamento/camera-appartamento-via-risorgimento-600x538.jpg`,
+  `${BASE}/appartamento/cucina-appartamento-via-risorgimento-600x538.jpg`,
+  `${BASE}/appartamento/bagno-appartamento-via-risorgimento-600x538.jpg`,
 ];
 
 const services = [

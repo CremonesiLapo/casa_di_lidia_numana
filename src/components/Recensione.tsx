@@ -1,6 +1,7 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
+import { BASE } from "@/lib/constants";
 
 export default function Recensione() {
   const { ref, inView } = useInView();
@@ -14,7 +15,7 @@ export default function Recensione() {
         }`}
       >
         <img
-          src="/assets/trip-advisor-recensione.png"
+          src={`${BASE}/assets/trip-advisor-recensione.png`}
           alt="TripAdvisor"
           className="h-6 mx-auto mb-4"
         />

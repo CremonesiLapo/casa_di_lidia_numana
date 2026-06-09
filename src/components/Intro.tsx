@@ -1,6 +1,7 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
+import { BASE } from "@/lib/constants";
 
 const stats = [
   { number: "56", label: "passi dal mare" },
@@ -51,7 +52,7 @@ export default function Intro() {
         <div className="flex flex-col gap-6">
           <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
             <img
-              src="/homepage_background.jpeg"
+              src={`${BASE}/homepage_background.jpeg`}
               alt="Vista sul mare di Numana"
               className="w-full h-full object-cover"
             />

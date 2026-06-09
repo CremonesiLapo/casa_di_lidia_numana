@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { BASE } from "@/lib/constants";
 
 export default function Hero() {
   const imgRef = useRef<HTMLImageElement>(null);
@@ -22,7 +23,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <img
         ref={imgRef}
-        src="/homepage_background.jpeg"
+        src={`${BASE}/homepage_background.jpeg`}
         alt="Spiaggia del Frate, Numana"
         className="absolute inset-0 w-full h-[120%] object-cover will-change-transform"
       />
@@ -30,7 +31,7 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col items-center text-center px-4">
         <img
-          src="/assets/logo-slider.png"
+          src={`${BASE}/assets/logo-slider.png`}
           alt="A Casa di Lidia"
           className="w-56 md:w-80 mb-6 drop-shadow-lg"
         />

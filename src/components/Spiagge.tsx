@@ -1,21 +1,22 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
+import { BASE } from "@/lib/constants";
 
 const beaches = [
   {
     name: "LA SPIAGGIOLA",
-    image: "/spiagge/spiaggiola.jpg",
+    image: `${BASE}/spiagge/spiaggiola.jpg`,
     desc: 'La spiaggia di Numana alta, detta "La Spiaggiola", offre un colpo d\'occhio splendido, immersa nella natura del Parco del Conero, pur mantenendo tutte le comodità di una spiaggia attrezzata.',
   },
   {
     name: "SPIAGGIA DEL FRATE",
-    image: "/spiagge/spiaggia_frate.jpg",
+    image: `${BASE}/spiagge/spiaggia_frate.jpg`,
     desc: 'Una delle più riservate e affascinanti calette di Numana. Deve il nome al maestoso scoglio bianco che si staglia di fronte ad essa. Prevalentemente attrezzata.',
   },
   {
     name: "LE DUE SORELLE",
-    image: "/spiagge/sirolo-due-sorelle.jpg",
+    image: `${BASE}/spiagge/sirolo-due-sorelle.jpg`,
     desc: "Due scogli gemelli emergono dalle acque limpidissime. Raggiungibile solo via mare, è un gioiello di natura incontaminata dove il solo rumore è quello del mare.",
   },
 ];

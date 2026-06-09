@@ -1,3 +1,5 @@
+import { BASE } from "@/lib/constants";
+
 export default function Footer() {
   return (
     <footer className="bg-mare-light text-white py-16 px-4">
@@ -36,7 +38,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-center">
           <img
-            src="/assets/logo-footer-300x101.png"
+            src={`${BASE}/assets/logo-footer-300x101.png`}
             alt="A Casa di Lidia"
             className="h-16 w-auto mb-6"
           />

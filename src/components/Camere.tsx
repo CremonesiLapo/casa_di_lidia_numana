@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useInView } from "@/hooks/useInView";
+import { BASE } from "@/lib/constants";
 
 const rooms = [
   {
@@ -11,9 +12,9 @@ const rooms = [
     size: "25mq",
     guests: "2 persone",
     images: [
-      "/indaco/indaco_letto.jpg",
-      "/indaco/indaco_parete.jpg",
-      "/indaco/indaco_bagno.jpg",
+      `${BASE}/indaco/indaco_letto.jpg`,
+      `${BASE}/indaco/indaco_parete.jpg`,
+      `${BASE}/indaco/indaco_bagno.jpg`,
     ],
   },
   {
@@ -23,9 +24,9 @@ const rooms = [
     size: "25mq",
     guests: "2/3 persone",
     images: [
-      "/corallo/corallo_letto.jpg",
-      "/corallo/corallo_parete.jpg",
-      "/corallo/corallo_bagno.jpg",
+      `${BASE}/corallo/corallo_letto.jpg`,
+      `${BASE}/corallo/corallo_parete.jpg`,
+      `${BASE}/corallo/corallo_bagno.jpg`,
     ],
   },
   {
@@ -35,9 +36,9 @@ const rooms = [
     size: "50mq",
     guests: "2 persone",
     images: [
-      "/oltremare/oltremare_letto.jpg",
-      "/oltremare/oltremare_parete.jpg",
-      "/oltremare/oltremare_bagno.jpg",
+      `${BASE}/oltremare/oltremare_letto.jpg`,
+      `${BASE}/oltremare/oltremare_parete.jpg`,
+      `${BASE}/oltremare/oltremare_bagno.jpg`,
     ],
   },
 ];

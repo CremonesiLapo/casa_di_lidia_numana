@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { BASE } from "@/lib/constants";
 
 const links = [
   { href: "#camere", label: "CAMERE" },
@@ -31,7 +32,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14 md:h-16 px-4 md:px-6">
           <a href="#" className="flex items-center gap-2">
             <img
-              src="/assets/a-casa-di-lidia-numana-bb.png"
+              src={`${BASE}/assets/a-casa-di-lidia-numana-bb.png`}
               alt="A Casa di Lidia"
               className={`transition-all ${
                 scrolled ? "h-7" : "h-9"
